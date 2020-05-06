@@ -94,6 +94,7 @@ video {
     vertical-align: baseline;
 }
 
+/*
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -136,8 +137,13 @@ table {
     border-spacing: 0;
 }
 
+
+/*BEGIN PAGE STYLES =================>>>>>>>>>>>>>>*/
+
 * {
     box-sizing: border-box;
+
+    max-width: 100%;
 }
 
 body {
@@ -149,4 +155,107 @@ body {
     width: 1000px;
 
 
+}
+
+.container {
+
+    margin: 0 auto;
+
+
+}
+
+/*NAVIGATION STYLES HERE**************/
+
+header {
+
+    border: 2px solid yellow;
+
+    display: flex;
+
+    justify-content: space-around;
+
+    align-items: center;
+
+    width: 100%;
+
+    margin: 0;
+
+    padding: 0;
+}
+
+#navLogo {
+
+    width: 30%;
+
+    padding: 3%;
+
+    margin: 0;
+}
+
+#navDiv {
+
+    /* border: 2px solid green; */
+
+    width: 70%;
+
+    padding: 5%;
+
+    margin: 0;
+
+}
+
+#navDiv a {
+
+    padding: 5%;
+
+    text-decoration: none;
+
+    color: fuchsia;
+
+
+}
+
+
+/*BODY OF THE PAGE */
+
+
+
+/*CONTACT ME SECTION OF EACH PAGE*/
+
+
+
+/*FOOTER OF THE DOCUMENT*/
+
+footer {
+
+    /* border: 2px solid purple; */
+
+    padding: 0;
+
+    margin: 0;
+
+    width: 100%;
+
+}
+
+/*MUST BE SPECIFIC AND APPLY USE FOOTER TO BE SPECIFIC*/
+footer #navDiv {
+
+    width: 100%;
+
+    padding: 0;
+
+    margin: 0;
+
+}
+
+/*MUST BE SPECIFIC BC WE ARE OVERWRITING OTHER CALLS*/
+footer #navDiv a {
+
+    color: brown;
+}
+
+footer span {
+
+    text-align: center;
 }
