@@ -7,6 +7,12 @@
 
     <link rel="stylesheet" href="style/index.css">
 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/aa7675c385.js" crossorigin="anonymous"></script>
+
     <title>Portfolio Website - Danielle P - Main</title>
 
 
@@ -30,6 +36,7 @@
                     <a href="about.html" alt="link to the about page">About</a>
                     <a href="contact.html" alt="link to the contact page">Contact</a>
                     <a href="projects.html" alt="link to the projects page">Projects</a>
+                    
                 </nav>
             </div>
 
@@ -44,14 +51,14 @@
         <div id="topHalf">
             <!--TOP SECTION PHOTO & PERSONAL STATEMENT-->
 
-            <div>
+            <div id="topImg">
                 <!--PERSONAL PHOTO DIV-->
 
                 <img src="https://picsum.photos/300/300" alt="if you see me im broken" />
 
             </div>
 
-            <div>
+            <div id="statement">
                 <!--PERSONAL STATEMENT DIV #1-->
 
                 <h3>Danielle P.</h3>
@@ -73,9 +80,21 @@
 
                 <div id="skillsList">
                     <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JS</li>
+                        <div id="htmlLI">
+                            <i class="fab fa-html5"></i>
+                            <li>HTML</li>
+                        </div>
+
+                        <div id="cssLI">
+                            <i class="fab fa-css3-alt"></i>
+                            <li>CSS</li>
+                        </div>
+
+                        <div id="jsLI">
+                            <i class="fab fa-js-square"></i></i>
+                            <li>JS</li>
+                        </div>
+
                     </ul>
                 </div>
 
@@ -84,15 +103,24 @@
             <!--PROJECT EXAMPLE THUMBNAILS-->
             <div id="projectsExamples">
 
-                <img />
-                <img />
-                <img />
+                    <h4>More Projects Here...</h4>
 
-                <h4>More Projects Here...</h4>
+                <div id="projImgs">
+
+                    <img src="https://picsum.photos/100/100" alt="if you see me im broken" />
+
+                    <img src="https://picsum.photos/100/100" alt="if you see me im broken" />
+
+                    <img src="https://picsum.photos/100/100" alt="if you see me im broken" />
+
+                </div>            
+
+
+                <!--CENTERED BUTTON TO PROJECTS PAGE-->
+                <button>Projects</button>
 
             </div>
-            <!--CENTERED BUTTON TO PROJECTS PAGE-->
-            <button>Projects</button>
+            
 
         </div>
         <br>

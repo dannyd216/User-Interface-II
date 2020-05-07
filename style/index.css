@@ -144,31 +144,44 @@ table {
     box-sizing: border-box;
 
     max-width: 100%;
+
+    background-color: slategray;
+
+}
+
+
+/*INCLUDE SO THAT WE CAN USE REM & EM*/
+html {
+
+    font-size: 62.5%;
 }
 
 body {
 
-    border: 2px solid pink;
+    /* border: 2px solid pink; */
 
     margin: 0 auto;
 
     width: 1000px;
 
+    font-family: 'Open Sans Condensed',
+        sans-serif;
+
+    font-family: 'Lobster',
+        cursive;
+
+    font-size: 2em;
+
+
 
 }
 
-.container {
-
-    margin: 0 auto;
-
-
-}
 
 /*NAVIGATION STYLES HERE**************/
 
 header {
 
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
 
     display: flex;
 
@@ -192,6 +205,13 @@ header {
     margin: 0;
 }
 
+#navLogo img {
+
+    max-width: 100%;
+
+    border-radius: 3em;
+}
+
 #navDiv {
 
     /* border: 2px solid green; */
@@ -212,15 +232,11 @@ header {
 
     color: fuchsia;
 
+    font-size: 3rem;
+
 
 }
 
-
-/*BODY OF THE PAGE */
-
-
-
-/*CONTACT ME SECTION OF EACH PAGE*/
 
 
 
@@ -236,6 +252,8 @@ footer {
 
     width: 100%;
 
+    text-align: center;
+
 }
 
 /*MUST BE SPECIFIC AND APPLY USE FOOTER TO BE SPECIFIC*/
@@ -247,15 +265,453 @@ footer #navDiv {
 
     margin: 0;
 
+
+}
+
+footer #navDiv nav {
+
+    justify-content: space-around;
 }
 
 /*MUST BE SPECIFIC BC WE ARE OVERWRITING OTHER CALLS*/
 footer #navDiv a {
 
-    color: brown;
+    width: 100%;
+
+    color: mediumblue;
+
+    /* border: 2px solid red; */
+
+    padding: 0;
+
+    margin: 0;
+
+    letter-spacing: 3px;
+
+
+
 }
 
-footer span {
+
+
+/*CONTACT ME SECTION OF EACH PAGE WITH BUTTON*/
+
+#contactMeDiv {
 
     text-align: center;
+
+    font-size: 2em;
+
+    color: rebeccapurple;
+
+
+}
+
+#contactMeDiv button {
+
+    font-size: .5em;
+
+    border: 2px solid palegoldenrod;
+
+    border-radius: 2rem;
+
+    padding: 1%;
+
+    margin: 2%;
+
+    font-weight: bold;
+
+    color: darkblue;
+
+}
+
+
+/**************************BODY OF THE PAGE ****************/
+
+
+
+/*HOME/INDEX PAGE */
+
+
+#topHalf {
+
+
+    display: flex;
+
+    /* justify-content: space-between; */
+
+    align-items: center;
+
+    width: 100%;
+}
+
+#topHalf #topImg img {
+
+    max-width: 100%;
+
+    width: 35vw;
+
+    height: 30vh;
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+#topHalf #statement {
+
+    width: 60%;
+
+    text-align: center;
+
+    font-size: 4rem;
+}
+
+#topHalf #statement p {
+
+    text-align: right;
+
+    color: khaki;
+}
+
+#topHalf #statement h3 {
+
+    color: peachpuff;
+
+    font-size: 7rem;
+
+    font-weight: bold;
+
+    font-style: oblique;
+}
+
+#topHalf #statement button {
+
+    border-radius: 2rem;
+
+    padding: 1%;
+
+    margin: 2%;
+
+    font-size: .5em;
+
+    color: palegoldenrod;
+}
+
+
+/*SKILLS SECTION*/
+
+#skillsSection {
+
+    display: flex;
+
+    flex-direction: column;
+
+    text-align: center;
+
+    font-size: 3rem;
+
+    font-weight: lighter;
+}
+
+#skillsSection h2 {
+
+    color: midnightblue;
+
+    padding: 3%;
+
+    margin: 0 auto;
+
+    font-size: 4rem;
+
+    text-decoration: underline;
+
+}
+
+#skillsList ul {
+
+    display: flex;
+
+
+}
+
+#skillsList ul div {
+
+    width: 35%;
+
+}
+
+/*SKILLS SECTION ***********/
+#htmlLI {
+
+    font-size: 2em;
+
+    color: darkblue;
+
+}
+
+#htmlLI i {
+
+    color: orangered;
+
+    margin: 4%;
+
+    padding: 0;
+}
+
+
+
+#cssLI {
+
+    font-size: 2em;
+
+    color: darkblue;
+}
+
+#cssLI i {
+
+    color: dodgerblue;
+
+    margin: 4%;
+
+    padding: 0;
+}
+
+#jsLI {
+
+    font-size: 2em;
+
+    color: darkblue;
+
+}
+
+#jsLI i {
+
+    color: #F7DF1E;
+
+    margin: 4%;
+
+    padding: 0;
+
+
+}
+
+
+
+/*PROJECT EXAMPLES SECTION*/
+
+#projectsExamples {
+
+    font-size: 5rem;
+
+    text-align: center;
+
+    padding: 5%;
+
+    color: deepskyblue;
+
+
+}
+
+#projectsExamples #projImgs {
+
+    display: flex;
+
+    justify-content: space-between;
+
+}
+
+#projImgs img {
+
+    width: 33%;
+
+    border: 2px solid black;
+
+    margin: 6%;
+}
+
+
+#projectsExamples button {
+
+    border-radius: 2rem;
+
+    padding: 1%;
+
+    margin: 1%;
+
+    font-size: .50em;
+
+    color: lightskyblue;
+}
+
+
+/*LARGEST ONE MUST GO FIRST AND SCALE DOWN SO ALL STYLES CAN BE CASCADED*/
+
+@media (max-width: 750px) {
+
+
+    #container header {
+
+        display: flex;
+
+        flex-direction: column;
+
+    }
+
+
+    header #navDiv nav {
+
+        display: flex;
+
+        flex-direction: column;
+
+        /* color: black; */
+
+
+    }
+
+    header #navDiv nav a {
+
+        color: lightseagreen;
+    }
+
+    footer #navDiv nav {
+
+        display: flex;
+
+        flex-direction: column;
+
+    }
+
+    footer #navDiv nav a {
+
+        color: lawngreen;
+
+    }
+
+    #topHalf {
+
+        display: flex;
+
+        flex-direction: column;
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+
+    #container header {
+
+        display: flex;
+
+        flex-direction: column;
+
+    }
+
+    header #navDiv nav {
+
+        display: flex;
+
+        flex-direction: column;
+
+    }
+
+    header #navDiv nav a {
+
+        color: crimson;
+    }
+
+    footer #navDiv nav {
+
+        display: flex;
+
+        flex-direction: column;
+
+    }
+
+    footer #navDiv nav a {
+
+        color: lightsalmon;
+
+    }
+
+
+    #navDiv nav {
+
+        display: flex;
+
+        flex-direction: column;
+
+    }
+
+    #topHalf {
+
+        display: flex;
+
+        flex-direction: column;
+
+    }
+
+}
+
+
+@media (max-width: 400px) {
+
+
+    #container header {
+
+        display: flex;
+
+        flex-direction: column;
+
+    }
+
+    header #navDiv nav {
+
+        display: flex;
+
+        flex-direction: column;
+
+    }
+
+    header #navDiv nav a {
+
+        color: crimson;
+    }
+
+    footer #navDiv nav {
+
+        display: flex;
+
+        flex-direction: column;
+
+    }
+
+    footer #navDiv nav a {
+
+        color: lightsalmon;
+
+    }
+
+
+    #navDiv nav {
+
+        display: flex;
+
+        flex-direction: column;
+
+    }
+
+    #topHalf {
+
+        display: flex;
+
+        flex-direction: column;
+
+    }
+
 }
